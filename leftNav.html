@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app="leftNav">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>左侧导航</title>
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/leftNav.css">
+</head>
+<body>
+	<div id="leftNavContainer">
+		<!-- 头部  -->
+		<header>xxx系统</header>
+
+		<!-- 左侧列表 -->
+		<div id="leftNavListMain" ng-controller="leftNavController">
+			<div class="navTitle">Menu管理</div>
+			<ul class="left-list clearfix">
+				<li class="navLists">
+					<div class="left-list-title leftNavHigh">menu1</div>
+					<ul class="left-list-details clearfix" style="display: block;">
+						<li class="listDetailsHigh">菜单一</li>
+						<li>菜单一</li>
+						<li>菜单一</li>
+					</ul>					
+				</li>
+				<li class="navLists">
+					<div class="left-list-title">menu2</div>
+					<ul class="left-list-details clearfix">
+						<li>菜单二</li>
+						<li>菜单二</li>
+						<li>菜单二</li>
+					</ul>
+				</li>
+				<li class="navLists" >
+					<div class="left-list-title">menu3</div>
+					<ul class="left-list-details clearfix">
+						<li>菜单三</li>
+						<li>菜单三</li>
+						<li>菜单三</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<!-- 左侧列表 end-->
+	</div>
+
+
+	<script src="js/angular.min.js"></script>
+	<script src="js/angular-ui-router.js"></script>
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/leftNav.js"></script>
+</body>
+</html>
